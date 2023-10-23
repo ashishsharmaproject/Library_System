@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Library_System.Admin" %>
+<%@ Register Src="~/AdminHeader.ascx" TagName="adminHeader" TagPrefix="asp" %>
+<%@ Register Src="~/Footer.ascx" TagName="footer" TagPrefix="asp" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table>
+                <tr>
+                    <td><asp:adminHeader id="mainHead" runat="server"></asp:adminHeader></td>
+                </tr>
+
+                <tr>
+                    <td style="height:500px">
+                        <center>
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                            </asp:ContentPlaceHolder>
+                        </center>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><asp:footer id="footer" runat="server"></asp:footer></td>
+                </tr>
+            </table>
+
+            
+        </div>
+    </form>
+</body>
+</html>
